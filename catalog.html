@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Каталог</title>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
         
         <nav>
             <ul>
-                <li><a href="">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="">Компания</a></li>
                 <li><a href="catalog.html">Каталаог</a></li>
                 <li><a href="">Новости</a></li>
@@ -40,74 +40,75 @@
         </nav>
         
     </header>
-
+    
     <main>
-        <h1>Интернет-магазин "Техномарт"</h1>
+        <h1>Перфораторы</h1>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Инструмент</a></li>
+            <li><a>Перфораторы</a></li>
+        </ul>
         
         <section>
+            <h2>Фильтр</h2>
+            <form action="https://echo.htmlacademy.ru">
+                <h3>Цена:</h3>
+                <!--Ползунок-->
+
+                <h3>Производители:</h3>
+                <ul>
+                    <li><label><input name="bosch" type="checkbox" checked>Bosch</label></li>
+                    <li><label><input type="checkbox" name="inter">Интерскол</label></li>
+                    <li><label><input type="checkbox" name="makita" checked>Makita</li>
+                    <li><label><input type="checkbox" name="dewalt">Dewalt</li>
+                    <li><label><input type="checkbox" name="hitachi">Hitachi</li>
+                </ul>
+                
+                <h3>Питание:</h3>
+                <ul>
+                    <li><label><input type="radio" name="pitanie" value="acc" checked>Аккумуляторные</label></li>
+                    <li><label><input type="radio" name="pitanie" value="net">Сетевые</label></li>
+                </ul>
+                
+                <input type="submit" value="Показать">
+            </form>
+        </section>
+        
+        <section>
+            <h2>Сортировка</h2>
+            <form>
+                <ul>
+                    <li><label><input type="radio" name="sort-by" value="price" checked>По цене</label></li>
+                    <li><label><input type="radio" name="sort-by" value="type">По типу</label></li>
+                    <li><label><input type="radio" name="sort-by" value="func">По функционалу</label></li>
+                    <hr>
+                    <li><label><input type="radio" name="sort-dir" value="up" checked>По возрастанию</label></li>
+                    <li><label><input type="radio" name="sort-dir" value="down">По убыванию</label></li>
+                </ul>
+                <input type="submit" value="Обновить">
+            </form>
+        </section>
+        
+        <section>
+            <h2>Список перфораторов</h2>
+            <!--Список перфораторов-->
             <ul>
-                <li>Материалы <a href="">на любой вкус</a></li>
-                <li>Инструмент <a href="">на все случаи</a></li>
-                <li>Техника <a href="">для стройки</a></li>
-                <li>Скидки 50% <a href="">на 350 товаров</a></li>
-                <li>Доставка <a href="">бесплатно</a></li>
+                <li><a>1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
             </ul>
-            <a href="catalog.html">Открыть каталог</a>
+            <a href="">Следующая</a>
         </section>
         
         <section>
-            <h2>Популярные товары</h2>
-            <ul>
-                <!--Список товаров-->
-            </ul>
-            <a href="">Все популярные товары</a>
+            <h2>Пара слов о перфораторах</h2>
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
         
-        <section>
-            <h2>Популярные производители</h2>
-            <ul>
-                <!--Список производителей-->
-            </ul>
-            <a href="">Все производители</a>
-        </section>
         
-        <section>
-            <h2>Сервисы</h2>
-            <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <ul>
-                <li><a>Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Кредит</a></li>
-            </ul>
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо<br> 
-к вашему подъезду совершенно бесплатно!<br>
-Ведь мы неплохо заработаем,<br>
-поднимая его на ваш этаж!</p>
-        </section>
-        
-        <section>
-            <h2>Компания "Техномарт"</h2>
-            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br>
-<br>
-Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-Техномарт работает со многими транспортными компаниями:</p>
-            <ul>
-                <li>Деловые линии</li>
-                <li>Автотрейдинг</li>
-                <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a href="">Подробнее о компании</a>
-        </section>
-        
-        <section>
-            <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, 
-заехав в наш офис:</p>
-            <!--Карта-->
-            <a href="">Заблудились? Напишите нам!</a>
-        </section>
     </main>
     
     <footer>
@@ -156,19 +157,6 @@
         
     </footer>
     
-    <section>
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <label>Ваше имя: <input name="name" type="text"></label>
-            <br>
-            <label>Ваш e-mail: <input name="email" type="email"></label>
-            <br>
-            <label>Текст письма:<br>
-                <textarea name="review"></textarea></label>
-            <br>
-            <input type="submit" value="Отправить">
-        </form>
-    </section>
     
 </body>
 </html>
